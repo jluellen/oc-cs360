@@ -1,0 +1,17 @@
+# Jared R. Luellen --2012-02-03
+# USR_Data.asm: Asks for users name and age then displays it
+# Registers used:
+#		$v0	- exit 
+
+main:				# Execution starts here!
+
+
+	li	$v0, 8		# Read_stR
+	syscall			# USR input stored in $vo	
+
+		
+	li	$v0, 10		# exit command	
+	syscall			# THE END!!!	
+
+
+
